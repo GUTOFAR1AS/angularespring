@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de CORS</title>
+    <script>
+        // Realiza uma requisição GET para o endpoint correto
+        fetch("http://localhost:8080")
+            .then(retorno => retorno.text())  // Converte o retorno para texto, já que seu método GET retorna uma String
+            .then(retorno => console.log(retorno));  // Exibe o retorno no console
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
